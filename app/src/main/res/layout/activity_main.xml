@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TIFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="591dp"
+        android:foregroundGravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp">
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_marginTop="100dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="EMAIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_marginTop="50dp"
+            android:layout_width="200dp"
+            android:inputType="textPassword"
+            android:hint="PASSWORD"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/loginEmail"
+            app:layout_constraintStart_toStartOf="@+id/loginEmail"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
+
+        <ProgressBar
+            android:id="@+id/mainProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+            app:layout_constraintStart_toStartOf="@+id/loginPassword"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_marginTop="60dp"
+            android:layout_width="200dp"
+            android:text="login"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+            app:layout_constraintStart_toStartOf="@+id/loginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="If you don't have account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+        <TextView
+            android:id="@+id/registerTxtBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:text="REGISTER"
+            android:textColor="#1D2DB6"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

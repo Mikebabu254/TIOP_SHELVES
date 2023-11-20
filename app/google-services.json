@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "672209892987",
+    "firebase_url": "https://tiffpriject-default-rtdb.firebaseio.com",
+    "project_id": "tiffpriject",
+    "storage_bucket": "tiffpriject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672209892987:android:54d23476bf85d9ef9794de",
+        "android_client_info": {
+          "package_name": "com.example.tiff"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbwTDxyqxqXiL1invLzsCnERfdZmTiJy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672209892987:android:d16f96454606d7809794de",
+        "android_client_info": {
+          "package_name": "com.example.tiffproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbwTDxyqxqXiL1invLzsCnERfdZmTiJy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
